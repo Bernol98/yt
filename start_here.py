@@ -6,10 +6,11 @@ from tkinter import *
 link = ''
 
 master = Tk()
+master.title('YouTube Downloader')
 master.geometry("600x250")
 mojfont = font.Font(family='Arial',size=16,weight='bold')
 linki = tkinter.Entry(master=master,font=mojfont)
-
+Label(master,text='Podaj link do filmu: ',font=mojfont).place(x=0,y=0)
 
 linki.pack()
 
