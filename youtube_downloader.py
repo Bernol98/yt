@@ -22,19 +22,9 @@ class Moj_YouTube:
         os.remove(f"{yt.title}.mp4")
         
     def Start(link):
-
-            try:
-                yt = YouTube(link)
-            except:
-                print("Błędny link, spróbuj ponownie")
-                input()
-                sys.exit()
+            yt = YouTube(link)
             zgadza_sie = yt.check_availability()
-            if zgadza_sie != None:
-                print("Film jest niedostępny")
-                input()
-                sys.exit()
-
+            return(zgadza_sie)
 
 #Wykonali: Maksym Bernasiewicz, Piotr Suchomski, Mateusz Mercik, Adrian Kowalewski
     
