@@ -78,8 +78,3 @@ def akcja():
         Label(master,text='błędny link lub błąd połączenia             ',font=mojfont).place(x=0,y=200)
 tkinter.Button(master,text="Szukaj",command=akcja).pack()
 master.mainloop()
-
-
-
-
-#Wykonali: Maksym Bernasiewicz, Piotr Suchomski, Mateusz Mercik, Adrian Kowalewski
